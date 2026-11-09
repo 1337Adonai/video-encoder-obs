@@ -1,4 +1,6 @@
-# Video Decoder para OBS
+# Video Encoder para OBS
+
+Video Encoder reorganiza los bloques del video en OBS antes de transmitir. Los espectadores recuperan la imagen con la extensión **Video Decoder** en Kick o Twitch.
 
 En GitHub, pulsá **Code → Download ZIP**, extraé el archivo y guardá la carpeta en un lugar fijo.
 
@@ -26,4 +28,3 @@ En **Transformar → Editar transformación**, usá alineación superior izquier
 | 1280 × 720 | X = 960, Y = 480 | 320 × 240 |
 
 Si ves trazos blancos gruesos al decodificar, revisá que el fondo de la cámara quede dentro de ese rectángulo. Si no aparece **User-defined shader**, comprobá la instalación del complemento y reiniciá OBS.
-
