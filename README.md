@@ -20,13 +20,13 @@ Necesitás OBS Studio y el complemento obs-shaderfilter. El complemento permite 
 
 ## Si querés filtrar varias fuentes
 
-Si tenés una captura de pantalla y una imagen de publicidad, conviene agrupar las fuentes que querés filtrar. OBS las combina primero y el shader se aplica una sola vez a la imagen del grupo.
+Si tenés varias fuentes además de la captura de pantalla, como alertas o imágenes superpuestas, conviene agrupar las que querés filtrar y aplicar el shader una sola vez al grupo.
 
-1. En **Fuentes**, mantené apretado **Ctrl**, seleccioná la captura y la publicidad, y elegí **Agrupar elementos seleccionados** con clic derecho. Dentro del grupo, poné la publicidad arriba de la captura.
-2. Si la captura ya tenía el shader, desactivalo ahí. Hacé clic derecho sobre el **grupo** y agregá el shader desde **Filtros**, como en el paso 3 de arriba.
-3. Comprobá que el grupo ocupe todo el lienzo y que la imagen se reconstruya bien en Video Decoder. Si usás el shader **Con cámara**, dejá la cámara y su fondo fuera del grupo, por encima de él. La esquina inferior derecha queda visible, incluida cualquier parte de la publicidad que caiga ahí.
+1. En **Fuentes**, mantené apretado **Ctrl** y seleccioná la captura de pantalla y las demás fuentes visibles que quieras incluir en el filtro. Hacé clic derecho y elegí **Agrupar elementos seleccionados**. Dentro del grupo, dejá las alertas y las imágenes por encima de la captura para que se vean.
+2. Si la captura ya tenía el shader, desactivalo ahí. Hacé clic derecho sobre el **grupo** y agregá el shader desde **Filtros**.
+3. Comprobá que el grupo ocupe todo el lienzo y que la imagen se reconstruya bien en Video Decoder. Si usás el modo **Con cámara**, dejá la cámara y su fondo fuera del grupo, por encima de él. Cualquier parte de una fuente que caiga en la esquina reservada para la cámara también queda visible.
 
-Si el tamaño del grupo cambia al mover sus fuentes, poné la captura y la publicidad en una **escena aparte**, aplicale el shader a esa escena y agregala como fuente **Escena** en la principal. Así el filtro trabaja sobre un lienzo fijo.
+Si el grupo cambia de tamaño al mover las fuentes, ponelas en una **escena aparte**, aplicale el shader a esa escena y agregala como fuente **Escena** en la principal. Así el filtro trabaja sobre un lienzo fijo.
 
 ## Si usás cámara
 
