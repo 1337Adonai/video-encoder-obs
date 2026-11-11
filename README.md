@@ -13,8 +13,8 @@ Necesitás OBS Studio y el complemento obs-shaderfilter. El complemento permite 
 
 | Si transmitís… | Archivo | Qué hacer con la cámara |
 |---|---|---|
-| Con cámara | `enconder-cam.shader` | Poné la cámara y su fondo arriba de la captura, dentro de la esquina inferior derecha. |
-| Sin cámara | `encoder-all.shader` | Ocultá la cámara y su fondo. |
+| Con cámara | `enconder-cam.shader` | Poné la cámara arriba de la captura, dentro de la esquina inferior derecha. |
+| Sin cámara | `encoder-all.shader` | Si tenés una fuente de cámara, ocultala. |
 
 5. **Comprobá la vista previa.** La captura debe verse desordenada. Avisales a los espectadores qué modo elegiste para que seleccionen el mismo en Video Decoder.
 
@@ -24,17 +24,17 @@ Si tenés varias fuentes además de la captura de pantalla, como alertas o imág
 
 1. En **Fuentes**, mantené apretado **Ctrl** y seleccioná la captura de pantalla y las demás fuentes visibles que quieras incluir en el filtro. Hacé clic derecho y elegí **Agrupar elementos seleccionados**. Dentro del grupo, dejá las alertas y las imágenes por encima de la captura para que se vean.
 2. Si la captura ya tenía el shader, desactivalo ahí. Hacé clic derecho sobre el **grupo** y agregá el shader desde **Filtros**.
-3. Comprobá que el grupo ocupe todo el lienzo y que la imagen se reconstruya bien en Video Decoder. Si usás el modo **Con cámara**, dejá la cámara y su fondo fuera del grupo, por encima de él. Cualquier parte de una fuente que caiga en la esquina reservada para la cámara también queda visible.
+3. Comprobá que el grupo ocupe todo el lienzo y que la imagen se reconstruya bien en Video Decoder. Si usás el modo **Con cámara**, dejá la cámara fuera del grupo, por encima de él. Cualquier parte de una fuente que caiga en la esquina reservada para la cámara también queda visible.
 
 Si el grupo cambia de tamaño al mover las fuentes, ponelas en una **escena aparte**, aplicale el shader a esa escena y agregala como fuente **Escena** en la principal. Así el filtro trabaja sobre un lienzo fijo.
 
 ## Si usás cámara
 
-En **Transformar → Editar transformación**, usá alineación superior izquierda y mantené la cámara y su fondo dentro de este rectángulo.
+En **Transformar → Editar transformación**, usá alineación superior izquierda y mantené la cámara dentro de este rectángulo.
 
 | Lienzo | Posición | Tamaño máximo |
 |---|---|---|
 | 1920 × 1080 | X = 1440, Y = 720 | 480 × 360 |
 | 1280 × 720 | X = 960, Y = 480 | 320 × 240 |
 
-Si ves trazos blancos gruesos al decodificar, revisá que el fondo de la cámara quede dentro de ese rectángulo. Si no aparece **User-defined shader**, comprobá la instalación del complemento y reiniciá OBS.
+Si ves trazos blancos gruesos al decodificar, revisá que la cámara quede dentro de ese rectángulo. Si no aparece **User-defined shader**, comprobá la instalación del complemento y reiniciá OBS.
