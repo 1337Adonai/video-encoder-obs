@@ -20,7 +20,7 @@ Necesitás OBS Studio y el complemento obs-shaderfilter. El complemento permite 
 
 ## Si querés filtrar varias fuentes
 
-Si tenés varias fuentes además de la captura de pantalla, como alertas o imágenes superpuestas, conviene agrupar las que querés filtrar y aplicar el shader una sola vez al grupo.
+Si tenés varias fuentes además de la captura de pantalla, como alertas o imágenes superpuestas, conviene agruparlas todas y aplicar el filtro sobre el grupo.
 
 1. En **Fuentes**, mantené apretado **Ctrl** y seleccioná la captura de pantalla y las demás fuentes visibles que quieras incluir en el filtro. Hacé clic derecho y elegí **Agrupar elementos seleccionados**. Dentro del grupo, dejá las alertas y las imágenes por encima de la captura para que se vean.
 2. Si la captura ya tenía el shader, desactivalo ahí. Hacé clic derecho sobre el **grupo** y agregá el shader desde **Filtros**.
